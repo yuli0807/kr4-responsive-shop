@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FlowerShop — интернет-магазин свежих цветов с доставкой по городу.">
+  <title>FlowerShop — интернет-магазин цветов</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Интернет-магазин цветов FlowerShop">
+  <meta property="og:description" content="Свежие букеты с доставкой по городу.">
+  <meta property="og:image" content="https://yuli0807.github.io/kr1-html-css-shop/images/preview.jpg">
+
+</head>
+
+<body>
+  
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">FlowerShop</a>
+
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a class="site-nav__link site-nav__link--active" href="index.html">Главная</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="order.html">Оформить заказ</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="contacts.html">Контакты</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html#advantages">Преимущества</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html#popular">Популярные товары</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<main>
+  <!-- Основное содержимое страницы -->
+   <section class="hero">
+  <h1>Интернет-магазин цветов FlowerShop</h1>
+  <p>
+    Свежие букеты с доставкой по городу. Розы, пионы, тюльпаны,
+    ромашки — выбирайте композицию на любой праздник или просто
+    чтобы порадовать близких.
+  </p>
+  <a class="button button--primary" href="#popular">Перейти к товарам</a>
+</section>
+
+<section class="section" id="advantages">
+  <h2>Почему выбирают нас</h2>
+
+  <ul class="advantages-list">
+    <li>Свежесть 100% — прямые поставки от лучших плантаций;</li>
+    <li>Быстрая доставка — привезем букет в любую точку города в назначенное время;</li>
+    <li>Опытные флористы — соберем уникальную композицию на любой бюджет.</li>
+  </ul>
+</section>
+
+<section class="section" id="popular">
+  <h2 class="section__title">Популярные букеты</h2>
+
+  <div class="products-grid">
+
+    <article class="product-card product-card--featured">
+      <span class="product-card__badge">Хит</span>
+      <img class="product-card__image" src="images/roses-juliette.jpg" alt="Пионовидные розы Джульетта">
+      <h3 class="product-card__title">Пионовидные розы «Джульетта»</h3>
+      <p class="product-card__description">21 пионовидная роза нежно-розовых оттенков.</p>
+      <p class="product-card__price">Цена: 6500 руб.</p>
+      <button class="button button--primary product-card__button" type="button" data-product="Пионовидные розы «Джульетта»">Заказать</button>
+    </article>
+
+    <article class="product-card">
+      <span class="product-card__badge">Хит</span>
+      <img class="product-card__image" src="images/ranunculus.jpg" alt="Ранункулюсы Пудра">
+      <h3 class="product-card__title">Ранункулюсы «Пудра»</h3>
+      <p class="product-card__description">19 ранункулюсов нежно-розовых и кремовых оттенков.</p>
+      <p class="product-card__price">Цена: 8100 руб.</p>
+      <button class="button button--primary product-card__button" type="button" data-product="Ранункулюсы «Пудра»">Заказать</button>
+    </article>
+
+    <article class="product-card">
+      <img class="product-card__image" src="images/bush-roses.jpg" alt="Кустовые розы Закат">
+      <h3 class="product-card__title">Кустовые розы «Закат»</h3>
+      <p class="product-card__description">9 кустовых роз в малиновых оттенках.</p>
+      <p class="product-card__price">Цена: 3800 руб.</p>
+      <button class="button button--primary product-card__button" type="button" data-product="Кустовые розы «Закат»">Заказать</button>
+    </article>
+
+    <article class="product-card">
+      <img class="product-card__image" src="images/gladiolus.jpg" alt="Гладиолусы Нежность">
+      <span class="product-card__badge">Скидка</span>
+      <h3 class="product-card__title">Гладиолусы «Нежность»</h3>
+      <p class="product-card__description">7 гладиолусов пастельных оттенков.</p>
+      <p class="product-card__price">Цена: 3000 руб.</p>
+      <button class="button button--primary product-card__button" type="button" data-product="Гладиолусы «Нежность»">Заказать</button>
+    </article>
+
+    <article class="product-card">
+      <img class="product-card__image" src="images/lilies.jpg" alt="Лилии Белый сад">
+      <h3 class="product-card__title">Лилии «Белый сад»</h3>
+      <p class="product-card__description">7 белоснежных лилий с тонким ароматом.</p>
+      <p class="product-card__price">Цена: 4900 руб.</p>
+      <button class="button button--primary product-card__button" type="button" data-product="Лилии «Белый сад»">Заказать</button>
+    </article>
+
+    <article class="product-card">
+      <img class="product-card__image" src="images/tulips.jpg" alt="Тюльпаны весенние">
+      <h3 class="product-card__title">Тюльпаны весенние</h3>
+      <p class="product-card__description">41 тюльпан нежных оттенков в крафтовой бумаге.</p>
+      <p class="product-card__price">Цена: 7800 руб.</p>
+      <button class="button button--primary product-card__button" type="button" data-product="Тюльпаны весенние">Заказать</button>
+    </article>
+
+    <article class="product-card">
+      <img class="product-card__image" src="images/daisies.jpg" alt="Ромашки Лето">
+      <h3 class="product-card__title">Ромашки «Лето»</h3>
+      <p class="product-card__description">Лёгкий полевой букет из ромашек.</p>
+      <p class="product-card__price">Цена: 3200 руб.</p>
+      <button class="button button--primary product-card__button" type="button" data-product="Ромашки «Лето»">Заказать</button>
+    </article>
+
+    <article class="product-card">
+      <img class="product-card__image" src="images/peonies.jpg" alt="Пионы Розовое облако">
+      <h3 class="product-card__title">Пионы «Розовое облако»</h3>
+      <p class="product-card__description">7 крупных пионов в упаковке.</p>
+      <p class="product-card__price">Цена: 5200 руб.</p>
+      <button class="button button--primary product-card__button" type="button" data-product="Пионы «Розовое облако»">Заказать</button>
+    </article>
+
+    <article class="product-card">
+      <img class="product-card__image" src="images/mix-basket.jpg" alt="Микс в корзине Любовь">
+      <span class="product-card__badge">Новинка</span>
+      <h3 class="product-card__title">Микс в корзине «Любовь»</h3>
+      <p class="product-card__description">Композиция в плетёной корзине с разными оттенками пионов.</p>
+      <p class="product-card__price">Цена: 6500 руб.</p>
+      <button class="button button--primary product-card__button" type="button" data-product="Микс в корзине «Любовь»">Заказать</button>
+    </article>
+
+  </div>
+</section>
+
+<section class="section" id="reviews">
+  <h2 class="section__title">Отзывы наших клиентов</h2>
+
+  <div class="reviews-grid">
+
+    <article class="review-card">
+      <div class="review-card__header">
+        <span class="review-card__author">Анна М.</span>
+        <span class="review-card__rating">★★★★★</span>
+      </div>
+      <p class="review-card__text">
+        «Заказывала «Джульетту» на годовщину. Бутоны огромные и очень нежные. 
+        Стояли ровно 10 дней, аромат потрясающий! Обязательно вернусь.»
+      </p>
+    </article>
+
+    <article class="review-card">
+      <div class="review-card__header">
+        <span class="review-card__author">Дмитрий П.</span>
+        <span class="review-card__rating">★★★★★</span>
+      </div>
+      <p class="review-card__text">
+        «Брал «Ранункулюсы» для свидания. Девушка в восторге, сказала, что пахнут лучше роз. 
+        Спасибо флористу за красивую упаковку, курьер приехал даже раньше времени.»
+      </p>
+    </article>
+
+    <article class="review-card">
+      <div class="review-card__header">
+        <span class="review-card__author">Елена В.</span>
+        <span class="review-card__rating">★★★★☆</span>
+      </div>
+      <p class="review-card__text">
+        «Брала «Микс в корзине» маме на юбилей. Смотрится очень богато! 
+        Мама была в восторге от шляпной коробки. Пришлось чуть подождать доставку, но результат того стоил.»
+      </p>
+    </article>
+
+    <article class="review-card">
+      <div class="review-card__header">
+        <span class="review-card__author">Ирина Г.</span>
+        <span class="review-card__rating">★★★★★</span>
+      </div>
+      <p class="review-card__text">
+        «Заказывала тюльпаны на 8 марта. Привезли в плотных бутонах, они раскрылись прямо в офисе. 
+        Свежесть на высшем уровне, ни один цветок не завял.»
+      </p>
+    </article>
+
+    <article class="review-card">
+      <div class="review-card__header">
+        <span class="review-card__author">Наталья Ф.</span>
+        <span class="review-card__rating">★★★★★</span>
+      </div>
+      <p class="review-card__text">
+        «Заказывала «Кустовые розы», чтобы порадовать себя. Менеджер подробно рассказал по телефону, 
+        как за ними ухаживать, чтобы простояли дольше. Очень внимательный сервис!»
+      </p>
+    </article>
+
+    <article class="review-card">
+      <div class="review-card__header">
+        <span class="review-card__author">Светлана К.</span>
+        <span class="review-card__rating">★★★★★</span>
+      </div>
+      <p class="review-card__text">
+        «Заказывала лилии анонимно на день рождения подруги. Всё прошло идеально! 
+        Курьер не проговорился, а открытку передал слово в слово.»
+      </p>
+    </article>
+
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <h2 class="section__title">Частые вопросы</h2>
+
+  <div class="faq">
+
+    <details class="faq__item">
+      <summary class="faq__question">Сколько стоит доставка в пределах МКАД и за МКАД?</summary>
+      <div class="faq__answer">
+        <p>По Москве в пределах МКАД доставка стоит 300 руб. (бесплатно при заказе от 6000 руб.). 
+        За МКАД — 300 руб. + 30 руб. за каждый километр от МКАД. 
+        Точную стоимость доставки за город наш менеджер рассчитает индивидуально при подтверждении заказа, чтобы вы точно знали итоговую сумму заранее.</p>
+      </div>
+    </details>
+
+    <details class="faq__item">
+      <summary class="faq__question">Как работает анонимная доставка?</summary>
+      <div class="faq__answer">
+        <p>Если вы хотите сделать сюрприз, при оформлении заказа в поле «Комментарий» напишите, что доставка анонимная. 
+        Курьер не назовет ваше имя и не скажет, от кого букет — он просто вежливо передаст его получателю. 
+        Если нужно сохранить интригу до конца, мы также можем не звонить получателю заранее для согласования времени.</p>
+      </div>
+    </details>
+
+    <details class="faq__item">
+      <summary class="faq__question">Можно ли добавить открытку с пожеланиями к букету?</summary>
+      <div class="faq__answer">
+        <p>Конечно! Мы бесплатно приложим красивую фирменную открытку с вашим текстом к букету. 
+        Просто укажите пожелания в поле «Комментарий» при оформлении заказа. 
+        Пожалуйста, заранее проверьте текст, чтобы в самый ответственный момент не было неприятных сюрпризов.</p>
+      </div>
+    </details>
+
+    <details class="faq__item">
+      <summary class="faq__question">Что делать, если цветы завяли слишком быстро?</summary>
+      <div class="faq__answer">
+        <p>Мы гарантируем свежесть каждого букета. Если вы заметили, что цветы потеряли вид в первые 24 часа после доставки, 
+        пожалуйста, свяжитесь с нами по телефону +7 (900) 000-00-00 и пришлите фото букета. 
+        Мы бесплатно заменим его на новый или вернем деньги — ваш комфорт и хорошее настроение для нас важнее всего.</p>
+      </div>
+    </details>
+
+    <details class="faq__item">
+      <summary class="faq__question">Можно ли изменить или отменить заказ после оформления?</summary>
+      <div class="faq__answer">
+        <p>Да, вы можете изменить состав букета, текст открытки, адрес или время доставки. 
+        Для этого свяжитесь с нашим менеджером по телефону +7 (900) 000-00-00 как можно быстрее. 
+        Если флористы еще не начали собирать букет, мы внесем любые правки или вернем 100% оплаты. 
+        Если курьер уже выехал, мы сможем перенести время доставки на более поздний срок, чтобы вы успели все обдумать.</p>
+      </div>
+    </details>
+
+  </div>
+</section>
+
+  <aside class="aside-info">
+    <h2 class="aside-info__title">О FlowerShop</h2>
+    <p class="aside-info__text">
+      Мы — команда влюбленных в свое дело флористов. Уже более 5 лет мы помогаем 
+      клиентам выражать эмоции через цветы. Работаем с лучшими плантациями 
+      и используем только свежие цветы в каждой композиции.
+    </p>
+  </aside>
+
+</main>
+
+<footer id="contacts">
+  <p>&copy; 2026 FlowerShop. Все права защищены.</p>
+  <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+</footer>
+
+<dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
+  <h2 class="order-dialog__title" id="order-dialog-title">Оформление заявки</h2>
+
+  <form class="order-form" id="order-form" action="#" method="post" novalidate>
+    <input id="selected-product" name="selected-product" type="hidden">
+
+    <div class="order-form__field">
+      <label class="order-form__label" for="order-name">Имя</label>
+      <input
+        class="order-form__input"
+        id="order-name"
+        name="name"
+        type="text"
+        placeholder="Введите ваше имя"
+        minlength="2"
+        autocomplete="given-name"
+        required
+      >
+    </div>
+
+    <div class="order-form__field">
+      <label class="order-form__label" for="order-email">E-mail</label>
+      <input
+        class="order-form__input"
+        id="order-email"
+        name="email"
+        type="email"
+        placeholder="example@mail.ru"
+        autocomplete="email"
+        required
+      >
+    </div>
+
+    <div class="order-form__field">
+      <label class="order-form__label" for="order-phone">Телефон</label>
+      <input
+        class="order-form__input"
+        id="order-phone"
+        name="phone"
+        type="tel"
+        inputmode="tel"
+        placeholder="+7 (900) 000-00-00"
+        pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$"
+        required
+      >
+      <small class="order-form__hint">Формат: +7 (900) 000-00-00</small>
+    </div>
+
+    <div class="order-form__field">
+      <label class="order-form__label" for="order-date">Дата связи</label>
+      <input
+        class="order-form__input"
+        id="order-date"
+        name="date"
+        type="date"
+      >
+    </div>
+
+    <div class="order-form__field">
+      <label class="order-form__label" for="order-topic">Тема заявки</label>
+      <select class="order-form__input" id="order-topic" name="topic" required>
+        <option value="">Выберите тему</option>
+        <option value="product">Заказ товара</option>
+        <option value="consultation">Консультация</option>
+        <option value="delivery">Доставка</option>
+      </select>
+    </div>
+
+    <div class="order-form__field">
+      <label class="order-form__label" for="order-comment">Комментарий</label>
+      <textarea
+        class="order-form__input"
+        id="order-comment"
+        name="comment"
+        rows="4"
+        placeholder="Укажите дополнительную информацию"
+      ></textarea>
+    </div>
+
+    <div class="order-form__field order-form__field--checkbox">
+      <label class="order-form__label">
+        <input
+          id="order-agreement"
+          name="agreement"
+          type="checkbox"
+          required
+        >
+        Я согласен на обработку данных
+      </label>
+    </div>
+
+    <div class="order-form__actions">
+      <button class="button button--secondary" type="button" id="close-order-dialog">Закрыть</button>
+      <button class="button button--primary" type="submit">Отправить заявку</button>
+    </div>
+  </form>
+</dialog>
+
+<p class="success-message" id="success-message" hidden>
+  Форма успешно отправлена!
+</p>
+
+<a class="scroll-top" href="#" aria-label="Наверх">↑</a>
+
+</body>
+
+</html>

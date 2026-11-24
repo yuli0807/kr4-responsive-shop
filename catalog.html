@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <<meta name="description" content="Каталог свежих букетов FlowerShop.">
+  <title>Каталог букетов — FlowerShop</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">FlowerShop</a>
+
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link site-nav__link--active" href="catalog.html">Каталог</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="order.html">Оформить заказ</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="contacts.html">Контакты</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html#advantages">Преимущества</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html#popular">Популярные товары</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<main>
+  <nav class="breadcrumbs" aria-label="Хлебные крошки">
+  <a class="breadcrumbs__link" href="index.html">Главная</a>
+  <span class="breadcrumbs__current">Каталог</span>
+  </nav>
+
+  <section class="section">
+    <h1>Каталог товаров</h1>
+    <p>
+      Свежие букеты из роз, пионов, тюльпанов и других цветов.
+      Доставка по городу в течение 2 часов. Оформите заказ онлайн
+      или позвоните нам.
+    </p>
+  </section>
+
+  <section class="catalog-layout">
+
+    <aside class="catalog-filters">
+      <h2>Фильтры</h2>
+
+      <form class="filters-form" action="#" method="get">
+        <fieldset>
+          <legend>Категория</legend>
+
+          <label>
+            <input type="checkbox" name="category" value="all">
+            Все товары
+          </label>
+
+          <label>
+            <input type="checkbox" name="category" value="popular">
+            Популярные
+          </label>
+
+          <label>
+            <input type="checkbox" name="category" value="new">
+            Новинки
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Цена</legend>
+
+          <label for="price-from">От</label>
+          <input id="price-from" name="price-from" type="number" min="0" placeholder="0">
+
+          <label for="price-to">До</label>
+          <input id="price-to" name="price-to" type="number" min="0" placeholder="8100">
+        </fieldset>
+
+        <button class="button button--primary" type="submit">Применить</button>
+      </form>
+    </aside>
+
+    <section class="catalog-products">
+      <h2>Список товаров</h2>
+
+      <div class="products-grid">
+
+        <article class="product-card">
+          <span class="product-card__badge">Хит</span>
+          <img class="product-card__image" src="images/roses-juliette.jpg" alt="Пионовидные розы Джульетта">
+          <h3 class="product-card__title">Пионовидные розы «Джульетта»</h3>
+          <p class="product-card__description">21 пионовидная роза нежно-розовых оттенков.</p>
+          <p class="product-card__price">Цена: 6500 руб.</p>
+          
+          <div class="product-card__actions">
+            <a class="button button--primary product-card__button" href="order.html">Заказать</a>
+            <a class="button button--secondary product-card__button" href="product-1.html">Подробнее</a>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <span class="product-card__badge">Хит</span>
+          <img class="product-card__image" src="images/ranunculus.jpg" alt="Ранункулюсы Пудра">
+          <h3 class="product-card__title">Ранункулюсы «Пудра»</h3>
+          <p class="product-card__description">19 ранункулюсов нежно-розовых и кремовых оттенков.</p>
+          <p class="product-card__price">Цена: 8100 руб.</p>
+          
+          <div class="product-card__actions">
+            <a class="button button--primary product-card__button" href="order.html">Заказать</a>
+            <a class="button button--secondary product-card__button" href="product-2.html">Подробнее</a>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img class="product-card__image" src="images/bush-roses.jpg" alt="Кустовые розы Закат">
+          <h3 class="product-card__title">Кустовые розы «Закат»</h3>
+          <p class="product-card__description">9 кустовых роз в малиновых оттенках.</p>
+          <p class="product-card__price">Цена: 3800 руб.</p>
+          
+          <div class="product-card__actions">
+            <a class="button button--primary product-card__button" href="order.html">Заказать</a>
+            <a class="button button--secondary product-card__button" href="product-3.html">Подробнее</a>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img class="product-card__image" src="images/gladiolus.jpg" alt="Гладиолусы Нежность">
+          <span class="product-card__badge">Скидка</span>
+          <h3 class="product-card__title">Гладиолусы «Нежность»</h3>
+          <p class="product-card__description">7 гладиолусов пастельных оттенков.</p>
+          <p class="product-card__price">Цена: 3000 руб.</p>
+          <a class="button button--primary product-card__button" href="order.html">Заказать</a>
+        </article>
+
+        <article class="product-card">
+          <img class="product-card__image" src="images/lilies.jpg" alt="Лилии Белый сад">
+          <h3 class="product-card__title">Лилии «Белый сад»</h3>
+          <p class="product-card__description">7 белоснежных лилий с тонким ароматом.</p>
+          <p class="product-card__price">Цена: 4900 руб.</p>
+          <a class="button button--primary product-card__button" href="order.html">Заказать</a>
+        </article>
+
+        <article class="product-card">
+          <img class="product-card__image" src="images/tulips.jpg" alt="Тюльпаны весенние">
+          <h3 class="product-card__title">Тюльпаны весенние</h3>
+          <p class="product-card__description">41 тюльпан нежных оттенков в крафтовой бумаге.</p>
+          <p class="product-card__price">Цена: 7800 руб.</p>
+          <a class="button button--primary product-card__button" href="order.html">Заказать</a>
+        </article>
+
+        <article class="product-card">
+          <img class="product-card__image" src="images/daisies.jpg" alt="Ромашки Лето">
+          <h3 class="product-card__title">Ромашки «Лето»</h3>
+          <p class="product-card__description">Лёгкий полевой букет из ромашек.</p>
+          <p class="product-card__price">Цена: 3200 руб.</p>
+          <a class="button button--primary product-card__button" href="order.html">Заказать</a>
+        </article>
+
+        <article class="product-card">
+          <img class="product-card__image" src="images/peonies.jpg" alt="Пионы Розовое облако">
+          <h3 class="product-card__title">Пионы «Розовое облако»</h3>
+          <p class="product-card__description">7 крупных пионов в упаковке.</p>
+          <p class="product-card__price">Цена: 5200 руб.</p>
+          <a class="button button--primary product-card__button" href="order.html">Заказать</a>
+        </article>
+
+        <article class="product-card">
+          <img class="product-card__image" src="images/mix-basket.jpg" alt="Микс в корзине Любовь">
+          <span class="product-card__badge">Новинка</span>
+          <h3 class="product-card__title">Микс в корзине «Любовь»</h3>
+          <p class="product-card__description">Композиция в плетёной корзине с разными оттенками пионов.</p>
+          <p class="product-card__price">Цена: 6500 руб.</p>
+          <a class="button button--primary product-card__button" href="order.html">Заказать</a>
+        </article>
+
+      </div>
+    </section>
+
+  </section>
+</main>
+
+  <footer>
+    <p>&copy; 2026 FlowerShop. Все права защищены.</p>
+    <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+  </footer>
+
+<a class="scroll-top" href="#" aria-label="Наверх">↑</a>
+
+</body>
+</html>

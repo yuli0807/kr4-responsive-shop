@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Оформление заказа букета в FlowerShop.">
+  <title>Оформление заказа — FlowerShop</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">FlowerShop</a>
+
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link site-nav__link--active" href="order.html">Оформить заказ</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="contacts.html">Контакты</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html#advantages">Преимущества</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html#popular">Популярные товары</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a class="breadcrumbs__link" href="index.html">Главная</a>
+      <span class="breadcrumbs__current">Оформление заказа</span>
+    </nav>
+
+    <section class="section">
+      <h1 class="section__title">Оформление заказа</h1>
+      <h2 class="section__title">Форма заявки</h2>
+      <p class="hero__text">
+        Выберите букет и заполните форму — мы свяжемся с вами для подтверждения заказа
+        и уточнения деталей доставки.
+      </p>
+    </section>
+
+    <section class="section">
+      <form class="order-form" id="order-form-page" action="#" method="post">
+
+        <div class="order-form__field">
+          <label class="order-form__label" for="page-bouquet">Выберите букет</label>
+          <select class="order-form__input" id="page-bouquet" name="bouquet" required>
+            <option value="">— Выберите букет —</option>
+            <option value="Пионовидные розы «Джульетта»">Пионовидные розы «Джульетта» — 6500 руб.</option>
+            <option value="Ранункулюсы «Пудра»">Ранункулюсы «Пудра» — 8100 руб.</option>
+            <option value="Кустовые розы «Закат»">Кустовые розы «Закат» — 3800 руб.</option>
+            <option value="Гладиолусы «Нежность»">Гладиолусы «Нежность» — 3000 руб.</option>
+            <option value="Лилии «Белый сад»">Лилии «Белый сад» — 4900 руб.</option>
+            <option value="Тюльпаны весенние">Тюльпаны весенние — 7800 руб.</option>
+            <option value="Ромашки «Лето»">Ромашки «Лето» — 3200 руб.</option>
+            <option value="Пионы «Розовое облако»">Пионы «Розовое облако» — 5200 руб.</option>
+            <option value="Микс в корзине «Любовь»">Микс в корзине «Любовь» — 6500 руб.</option>
+          </select>
+        </div>
+
+        <div class="order-form__field">
+          <label class="order-form__label" for="page-name">Имя</label>
+          <input
+            class="order-form__input"
+            id="page-name"
+            name="name"
+            type="text"
+            placeholder="Введите ваше имя"
+            pattern="^[А-Яа-яЁёA-Za-z\s\-]{2,50}$"
+            title="Только буквы, пробелы и дефис, от 2 до 50 символов"
+            required
+          >
+        </div>
+
+        <div class="order-form__field">
+          <label class="order-form__label" for="page-email">E-mail</label>
+          <input
+            class="order-form__input"
+            id="page-email"
+            name="email"
+            type="email"
+            placeholder="example@mail.ru"
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            title="Введите корректный e-mail"
+            required
+          >
+        </div>
+
+        <div class="order-form__field">
+          <label class="order-form__label" for="page-phone">Телефон</label>
+          <input
+            class="order-form__input"
+            id="page-phone"
+            name="phone"
+            type="tel"
+            inputmode="tel"
+            placeholder="+7 (900) 000-00-00"
+            pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$"
+            title="Формат: +7 (900) 000-00-00"
+            required
+          >
+          <small class="order-form__hint">Формат: +7 (900) 000-00-00</small>
+        </div>
+
+        <div class="order-form__field">
+          <label class="order-form__label" for="page-address">Адрес доставки</label>
+          <input
+            class="order-form__input"
+            id="page-address"
+            name="address"
+            type="text"
+            placeholder="Город, улица, дом, квартира"
+            minlength="5"
+            title="Пожалуйста, укажите полный адрес доставки"
+            required
+          >
+        </div>
+
+        <div class="order-form__field">
+          <label class="order-form__label" for="page-date">Дата доставки</label>
+          <input
+            class="order-form__input"
+            id="page-date"
+            name="date"
+            type="date"
+          >
+        </div>
+
+        <div class="order-form__field">
+          <label class="order-form__label" for="page-time">Время доставки</label>
+          <select class="order-form__input" id="page-time" name="time" required>
+            <option value="">Выберите удобное время</option>
+            <option value="09:00-12:00">Утро (с 09:00 до 12:00)</option>
+            <option value="12:00-15:00">День (с 12:00 до 15:00)</option>
+            <option value="15:00-18:00">После обеда (с 15:00 до 18:00)</option>
+            <option value="18:00-21:00">Вечер (с 18:00 до 21:00)</option>
+            <option value="asap">Как можно скорее (в течение 2 часов)</option>
+          </select>
+        </div>
+
+        <div class="order-form__field">
+          <label class="order-form__label" for="page-comment">Комментарий</label>
+          <textarea
+            class="order-form__input"
+            id="page-comment"
+            name="comment"
+            rows="4"
+            placeholder="Укажите адрес доставки или дополнительную информацию"
+            minlength="10"
+            maxlength="500"
+            title="От 10 до 500 символов"
+          ></textarea>
+        </div>
+
+        <div class="order-form__field order-form__field--checkbox">
+          <label class="order-form__label">
+            <input
+              id="page-agreement"
+              name="agreement"
+              type="checkbox"
+              required
+            >
+            Я согласен на обработку данных
+          </label>
+        </div>
+
+        <div class="order-form__actions">
+          <button class="button button--primary" type="submit">Отправить заявку</button>
+        </div>
+
+      </form>
+    </section>
+
+    <aside class="aside-info">
+      <h2 class="aside-info__title">Как мы работаем</h2>
+      <p class="aside-info__text">
+        После отправки заявки вы получите SMS с подтверждением.
+        После подтверждения заказа мы сразу приступим к сборке букета. 
+        В случае, если потребуется уточнить детали или заменить цветы в букете на аналогичные, наш менеджер свяжется с вами.
+    </aside>
+
+  </main>
+
+  <footer class="site-footer">
+    <p class="site-footer__text">&copy; 2026 FlowerShop. Все права защищены.</p>
+    <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка</p>
+  </footer>
+
+  <a class="scroll-top" href="#" aria-label="Наверх">↑</a>
+
+</body>
+</html>
